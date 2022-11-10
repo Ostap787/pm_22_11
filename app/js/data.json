@@ -1,0 +1,24 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "description": "Collaboratively administrate",
+      "completed": false
+    },
+    {
+      "id": 2,
+      "description": "Another todo on the list. Add as many you want",
+      "completed": true
+    },
+    {
+      "id": 3,
+      "description": "Dramatically maintain clicks-and-mortar",
+      "completed": false
+    },
+    {
+      "id": 4,
+      "description": "administrate empowered markets.",
+      "completed": false
+    }
+  ]
+}
