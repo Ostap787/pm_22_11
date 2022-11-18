@@ -11,14 +11,16 @@
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
           integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <!-- endbuild -->
-    <!-- build:css styles/main.css -->
-    <link rel="stylesheet" href="css/style.min.css" />
+    <!-- build:sass styles/style.sass -->
+    <link rel="stylesheet" href="css/style.css" />
     <!-- endbuild -->
-    <!-- build:js scripts/modernizr.js -->
-    <script src="js/script.min.js"></script>
+    <!-- build:js scripts/script.js -->
+    <script src="js/script.js"></script>
     <!-- endbuild -->
     <!-- build:js scripts/vendor.js -->
     <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
@@ -26,10 +28,11 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.7/dist/semantic.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.7/dist/semantic.min.js"></script>
 
-    <!-- <link rel="stylesheet" href="styles/d.css" /> -->
+    <!-- <link rel="stylesheet" href="styles/d.sass" /> -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
+
 
 
 
@@ -40,22 +43,21 @@
 <div class="ui sidebar left inverted vertical menu" id="sidebar">
 
     <!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
-    <div style="height: 56px;   padding: 0px 0px 0px 0px; background-color: hsl(231.4, 54.4%, 40.4%)">
+    <div style="height: 56px;padding: 0px 0px 0px 0px; background-color: hsl(231.4, 54.4%, 40.4%)">
         <div class="item">
             <div class="stitle">
-                <div class="text " style="padding: 0px -10px -35px -10px; height: 50px; font-size: 25px;"> <i class="fab fa-gg"></i> Infinity </div>
+                <div class="text " style=" font-family: 'Raleway', sans-serif; color: white;padding: 0px -10px -35px -10px; height: 50px; font-size: 25px; padding-left: 3px; "> <i class="fab fa-gg"></i> Infinity </div>
             </div>
         </div>
     </div>
     <!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
     <div class="item" style="background-color: rgb(245, 245, 245)">
-        <img class="ui tiny circular floated image" src="img/avatar/mohamed.png" alt="avatar">
-        <div class="nine wide column"> <img class="ui floated image" src="img/mohamed.png">
-        </div>
+        <img class="ui tiny circular floated image" style="width: 70px; padding-top: 15px;" src="/img/mohamed.jpg" >
+
         <table>
             <tr>
                 <td width="10" height="90" valign="top">
-                <td style="color: #000; font-size: 13px "> MOHAMED SAID
+                <td style="color: #000; font-size: 13px; font-family: 'Raleway', sans-serif; color: black;"> MOHAMED SAID
                     <div class="ui dropdown">
                         <div style="font-size: 13px;">Founder of App <i class="dropdown icon"></i></div>
                     </div>
@@ -64,71 +66,71 @@
         </table>
     </div>
     <div class="menubar-scroll-inner" style="overflow: hidden; width: auto; height: 913px;">
-    <!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
-    <div class="ui divider" style="margin: -0.6px 0px -0.6px 0px; "> </div>
-    <div style="background-color: hsla(0, 0%, 96%, 0.993); color: #000; ">
-        <a class=" item" style=" color: #000; font-size: 13px ">Ui Kits</a>
-        <a class=" item" style=" color: #000;">
-            <div><i class="home icon"></i>Dashboard</div>
-        </a>
-        <a  class="item" style=" color: #000;">
-            <div><i class="bolt icon"></i>Apps</div>
-            <div class="ui label"
-                 style="margin:-17px 0px 0px 0px; padding: 4px 6px 4px 6px; background-color: rgb(255, 81, 0)">3</div>
-        </a>
-        <a class="item" style=" color: #000;">
-            <div><i class="lock   icon"></i>Components</div>
-            <div class="ui label" style="margin:-17px 0px 0px 0px; padding: 4px 6px 4px 6px; background-color:#4baf4f">9
-            </div>
-        </a>
-        <a href="https://outlook.live.com/owa/" class=" item" style=" color: #000;">
-            <div><i class="envelope icon"></i>EMAIL</div>
-            <div class="ui label" style="margin:-17px 0px 0px 0px; padding: 4px 6px 4px 6px; background-color: #3f51b5;">4
-            </div>
-        </a>
-        <a class="item" style=" color: #000;">
-            <div><i class="anchor icon"></i>Form</div>
-        </a>
-        <a href="https://www.google.com.ua/maps/@50.4851493,30.4721233,14z?hl=ru" class="item" style=" color: #000;">
-            <div><i class="map icon"></i> Maps</div>
-        </a>
-        <a class="item" style=" color: #000;">
-            <div><i class="copy outline icon"></i>Pages</div>
-            <div class="ui label" style="margin:-17px 0px 0px 0px; padding: 4px 6px 4px 6px; background-color: #ff9f00">8
-            </div>
-        </a>
-        <a class="item" style=" color: #000;">
-            <div><i class="align left icon"></i>Menu</div>
-        </a>
-    </div>
+        <!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+        <div class="ui divider" style="margin: -0.8px 0px -0.6px 0px; font-family: 'Raleway', sans-serif; color: black;"> </div>
+        <div style="background-color: hsla(0, 0%, 96%, 0.993); color: #000; ">
+            <a class=" item" style=" color: #000; font-size: 13px ">Ui Kits</a>
+            <a class=" item" style=" color: #000;">
+                <div><i class="home icon" style="height: 10px;"></i>Dashboard</div>
+            </a>
+            <a  class="item" style=" color: #000;">
+                <div><i class="bolt icon"></i>Apps</div>
+                <div class="ui label"
+                     style="margin:-17px 0px 0px 0px; padding: 4px 6px 4px 6px; background-color: rgb(255, 81, 0)">3</div>
+            </a>
+            <a class="item" style=" color: #000;">
+                <div><i class="lock   icon"></i>Components</div>
+                <div class="ui label" style="margin:-17px 0px 0px 0px; padding: 4px 6px 4px 6px; background-color:#4baf4f">9
+                </div>
+            </a>
+            <a href="https://outlook.live.com/owa/" class=" item" style=" color: #000;">
+                <div><i class="envelope icon"></i>EMAIL</div>
+                <div class="ui label" style="margin:-17px 0px 0px 0px; padding: 4px 6px 4px 6px; background-color: #3f51b5;">4
+                </div>
+            </a>
+            <a class="item" style=" color: #000;">
+                <div><i class="anchor icon"></i>Form</div>
+            </a>
+            <a href="https://www.google.com.ua/maps/@50.4851493,30.4721233,14z?hl=ru" class="item" style=" color: #000;">
+                <div><i class="map icon"></i> Maps</div>
+            </a>
+            <a class="item" style=" color: #000;">
+                <div><i class="copy outline icon"></i>Pages</div>
+                <div class="ui label" style="margin:-17px 0px 0px 0px; padding: 4px 6px 4px 6px; background-color: #ff9f00">8
+                </div>
+            </a>
+            <a class="item" style=" color: #000;">
+                <div><i class="align left icon"></i>Menu</div>
+            </a>
+        </div>
 
-    <div class="ui divider" style="margin: -0.6px 0px -0.6px 0px; "> </div>
+        <div class="ui divider" style="margin: -0.6px 0px -0.6px 0px;"> </div>
 
-    <!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
-    <div style="background-color: hsla(0, 0%, 96%, 0.993); color: #000; ">
-        <a class=" item" style=" color: #000; font-size: 13px ">Ui Kits</a>
-        <a class=" item" style=" color: #000;">
-            <div><i class="cog icon"></i>Settings</div>
-        </a>
-        <a class="item" style=" color: #000;">
-            <div><i class="paste icon"></i>Document</div>
-            <div class="ui label" style="margin:-17px 0px 0px 0px; padding: 4px 6px 4px 6px; background-color: #3f51b5;">2
-            </div>
-        </a>
-        <a class="item" style=" color: #000;">
-            <div><i class="html5 icon"></i>HTML Version</div>
-        </a>
-        <a class="item" style="height: 10000px; color: #000;"></a>
-
-
+        <!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+        <div style="background-color: hsla(0, 0%, 96%, 0.993); color: #000; ">
+            <a class=" item" style=" color: #000; font-size: 13px ">Ui Kits</a>
+            <a class=" item" style=" color: #000;">
+                <div><i class="cog icon" style="height: 14px;"></i>Settings</div>
+            </a>
+            <a class="item" style=" color: #000;">
+                <div><i class="paste icon"></i>Document</div>
+                <div class="ui label" style="margin:-17px 0px 0px 0px; padding: 4px 6px 4px 6px; background-color: #3f51b5;">2
+                </div>
+            </a>
+            <a class="item" style=" color: #000;">
+                <div><i class="html5 icon"></i>HTML Version</div>
+            </a>
+            <a class="item" style="height: 10000px; color: #000;"></a>
 
 
-    </div></div>
+
+
+        </div></div>
     <!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
 </div>
 
 <!--   права частина меню -->
-<div class="ui fixed borderless menu" style="background-color: #464da8">
+<div class="ui fixed borderless menu" style="background-color: #464da8; height: 56px;">
     <div class="ui icon item" id="myicon">
         <i class="large bars link icon"></i>
     </div>
@@ -141,18 +143,7 @@
                     <div class="ui floating circular mini red  label">3</div>
                 </i>
             </i>
-            <div class="menu">
-                <div style="width: 150px">
-                    <div class="item"><img class="ui avatar image" src="/img/avatar/nan.jpg"> Nan Fu <div
-                            style="color: rgb(68, 0, 255); font-size: 12px; "> recommend a new friend</div>
-                    </div>
-                    <div class="item"><img class="ui avatar image" src="/img/avatar/jenny.jpg"> Jenny Hess <div
-                            style="color: #ff00ea; font-size: 12px; "> <i class="birthday cake icon"></i> celebrates a birthday
-                    </div>
-                    </div>
-                    <div class="item" style="color: hsl(187, 100%, 50%)">World news </div>
-                </div>
-            </div>
+
         </div>
 
         <!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
@@ -165,22 +156,7 @@
                 </i>
             </i>
 
-            <div class="menu" >
-                <div style="width: 150px">
-                    <div class="item"><img class="ui avatar image" src="/img/avatar/elliot.jpg"> Elliot Fu <div
-                            style="color: red; font-size: 10px; padding: 0px 25px">offline</div>
-                    </div>
-                    <div class="item"><img class="ui avatar image" src="/img/avatar/jenny.jpg"> Jenny Hess <div
-                            style="color: red; font-size: 10px; padding: 0px 25px">offline</div>
-                    </div>
-                    <div class="item"><img class="ui avatar image" src="/img/avatar/stevie.jpg"> Stevie Feliciano <div
-                            style="color: green; font-size: 10px; padding: 0px 25px">online</div>
-                    </div>
-                    <div class="item"><img class="ui avatar image" src="/img/avatar/christian.jpg"> Christian <div
-                            style="color: rgb(255, 217, 0); font-size: 10px; padding: 0px 25px">idle</div>
-                    </div>
-                </div>
-            </div>
+
         </div>
         <!-- </span> -->
         <!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
@@ -191,39 +167,8 @@
             <div class="menu">
                 <div class="ui icon search input">
                     <i class="search icon"></i>
-                    <input type="text" placeholder="Search friend...">
-                </div>
 
-                <div class="item" data-value="important">
-                    <div class="ui red empty circular label"></div>
-                    <img class="ui avatar image" src="/img/avatar/jenny.jpg">
-                    Jenny Hess
-                </div>
-                <div class="item" data-value="announcement">
-                    <div class="ui red empty circular label"></div>
-                    <img class="ui avatar image" src="/img/avatar/elliot.jpg">
-                    Elliot Fu
-                </div>
-                <div class="item" data-value="cannotfix">
-                    <div class="ui green empty circular label"></div>
-                    <img class="ui avatar image" src="/img/avatar/stevie.jpg">
-                    Stevie Feliciano
-                </div>
-                <div class="item" data-value="news">
-                    <div class="ui yellow empty circular label"></div>
-                    <img class="ui avatar image" src="/img/avatar/christian.jpg">
-                    Christian
-                </div>
-                <div class="item" data-value="enhancement">
-                    <div class="ui red empty circular label"></div>
-                    <img class="ui avatar image" src="/img/avatar/matt.jpg">
-                    Matt
-                </div>
-                <div class="item" data-value="off-topic">
-                    <div class="ui yellow empty circular label"></div>
-                    <img class="ui avatar image" src="/img/avatar/justen.jpg">
-                    Justen Kitsune
-                </div>
+
             </div>
         </div>
 
@@ -231,28 +176,20 @@
         <!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
         <div class="ui dropdown item">
             <i class="th link icon" style="color: #dad8d8 "></i>
+            <div class="menu">
 
-            <div class="menu" style="  padding: 15px 12px;">
-                <div style="width: 150px">
-                    <div class="item"><i class="user icon"></i><a href="http://localhost:9000/">My profile</a></div>
-                    <div class="item"><i class="euro sign icon"></i><a
-                            href="https://bank.gov.ua/ua/markets/exchangerates?date=20.03.2021&period=daily">Balance</a></div>
-                    <div class="item"><i class="globe europe icon"></i>Connections <div class="ui blue label">29</div>
-                    </div>
-                    <div class="item"><i class="male icon"></i>Friends</div>
-                    <div class="ui divider"></div>
-                    <div class="item"><i class="calendar alternate icon"></i><a href="https://time.is/uk/calendar">Events</a>
-                    </div>
-                    <div class="item"><i class="life ring outline icon"></i>Account settings</div>
+
                 </div>
             </div>
+        </div>
+
         </div>
 
     </div>
 </div>
 
 
-<div id="jumbotron" style=" padding: 3em; margin: 4em auto 1em auto; font-weight: 700;">
+<div id="jumbotron" style=" padding: 2em; margin: 4em auto 1em auto; font-weight: 700;">
     <div class="ui two column stackable grid" style=" font-size: 25px; color: rgb(48, 47, 47);">
         <div class="column"  style=" font-family: 'Raleway', sans-serif;">
             <div class="ui raised segment">
@@ -268,6 +205,7 @@
                 <div class="text1" style="font-size: 25px;"> Active
                     <h1 class="ui right aligned header" style="padding: 0px 30px 0px 0px;"> 325 </h1>
                 </div>
+
                 <div style="font-size: 17px;"> Loads / contact </div>
             </div>
         </div>
@@ -287,15 +225,20 @@
                                     66.163 K
                                 </div>
                                 <h4 class="without-margin-top" style="color: black; "> Total Leads </h4>
+
                             </div>
                         </div>
                     </div>
                     <div class="two wide centered" style="padding: 35px 15px; color: #edf0f5;font-size: 45px;">
                         <i class="paperclip icon"></i>
                     </div>
-                    <footer class="widget-footer bg-danger"style="background-color: #3f51b5; color: #ffffffbb; " ><div class="change" style="padding: 15px 0px 0px 0px;"> %charge</div>
-                        <span class="small-chart pull-right" data-plugin="sparkline" data-options="[1,2,3,5,4], { type: 'bar', barColor: '#ffffff', barWidth: 5, barSpacing: 2 }">
-                    <canvas width="33" height="16" style="display: inline-block; width: 404px; height: 0px; vertical-align: top;"> </canvas></span>
+                    <footer class="widget-footer bg-danger"style="background-color: #3f51b5; color: #ffffffbb; " > <div class="change" style="padding: 15px 0px 0px 0px;"> %charge
+
+                        <ion-icon name="cellular-outline" style="padding-left: 285px; font-size: 20px;"></ion-icon> </div>
+
+                        <span class="small-chart pull-right" data-plugin="sparkline" >
+                    <canvas width="33" height="16" style="display: inline-block; width: 411px; height: 0px; vertical-align: top;"> </canvas></span>
+
 
                     </footer>
                 </div>
@@ -316,9 +259,14 @@
                     <div class="two wide centered" style="padding: 35px 15px; color: #edf0f5;font-size: 45px;">
                         <i class="ban icon"></i>
                     </div>
-                    <footer class="widget-footer bg-danger"style="background-color: #e54919; color: #ffffffbb;" ><div class="change" style="padding: 15px 0px 0px 0px;"> %charge</div>
-                        <span class="small-chart pull-right" data-plugin="sparkline" data-options="[1,2,3,5,4], { type: 'bar', barColor: '#ffffff', barWidth: 5, barSpacing: 2 }">
-                    <canvas width="33" height="16" style="display: inline-block; width: 404px; height: 1px; vertical-align: top;"> </canvas></span></footer>
+
+                    <footer class="widget-footer bg-danger"style="background-color: #e54919; color: #ffffffbb;" ><div class="change" style="padding: 15px 0px 0px 0px;"> %charge
+                        <ion-icon name="stats-chart-outline" style="padding-left: 285px; font-size: 20px;"></ion-icon>
+
+                        <span class="small-chart pull-right" data-plugin="sparkline" >
+                            <canvas width="33" height="16" style="display: inline-block; width: 404px; height: 1px; vertical-align: top;"> </canvas></span></div>
+                    </footer>
+
                 </div>
 
             </div>
@@ -337,9 +285,10 @@
                     <div class="two wide centered" style="padding: 35px 15px; color: #edf0f5;font-size: 45px;">
                         <i class="unlock icon"></i>
                     </div>
-                    <footer class="widget-footer bg-danger"style="background-color: #4baf4f; color: #ffffffbb;" ><div class="change" style="padding: 15px 0px 0px 0px;"> %charge</div>
-                        <span class="small-chart pull-right" data-plugin="sparkline" data-options="[1,2,3,5,4], { type: 'bar', barColor: '#ffffff', barWidth: 5, barSpacing: 2 }">
-                    <canvas width="33" height="16" style="display: inline-block; width: 404px; height: 1px; vertical-align: top;"></canvas></span></footer>
+                    <footer class="widget-footer bg-danger"style="background-color: #4baf4f; color: #ffffffbb;" ><div class="change" style="padding: 15px 0px 0px 0px;"> %charge
+                        <ion-icon name="cellular-outline" style="padding-left: 285px; font-size: 20px;"></ion-icon></div>
+                        <span class="small-chart pull-right" data-plugin="sparkline" >
+                    <canvas width="33" height="16" style="display: inline-block; width: 411px; height: 1px; vertical-align: top;"></canvas></span></footer>
                 </div>
             </div>
 
@@ -357,9 +306,13 @@
                     <div class="two wide centered" style="padding: 35px 15px; color: #edf0f5;font-size: 45px;">
                         <i class="clipboard outline icon"></i>
                     </div>
-                    <footer class="widget-footer bg-danger"style="background-color: #ff9f00; color: #ffffffbb;" ><div class="change" style="padding: 15px 0px 0px 0px;"> %charge</div>
-                        <span class="small-chart pull-right" data-plugin="sparkline" data-options="[1,2,3,5,4], { type: 'bar', barColor: '#ffffff', barWidth: 5, barSpacing: 2 }">
-                    <canvas width="33" height="16" style="display: inline-block; width: 404px; height: 1px; vertical-align: top;"></canvas></span></footer>
+                    <footer class="widget-footer bg-danger"style="background-color: #ff9f00; color: #ffffffbb;" ><div class="change" style="padding: 15px 0px 0px 0px;"> %charge
+                        <ion-icon name="stats-chart-outline" style="padding-left: 285px; font-size: 20px;"></ion-icon>
+
+                        <span class="small-chart pull-right" data-plugin="sparkline" >
+                    <canvas width="33" height="16" style="display: inline-block; width: 404px; height: 0px; vertical-align: top;">
+
+                    </canvas></span> </div></footer>
                 </div>
             </div>
 
@@ -373,9 +326,9 @@
         <div class="ui grid" style=" padding: 0px 0px 0px 0px">
             <div class="seven wide column">
 
-                <div style="color: #3f51b5;font-family: 'Raleway', sans-serif; font-size: 30px; padding: 25px 0px;  ">Sales in
+                <div style="color: #3f51b5;font-family: 'Raleway', sans-serif; font-size: 30px; padding: 25px 0px; padding-left: 12px;">Sales in
                     2014 </div>
-                <div style=" color: rgb(184, 184, 184); font-family: 'Raleway', sans-serif;letter-spacing:2">
+                <div style=" color: rgb(184, 184, 184); font-family: 'Raleway', sans-serif;letter-spacing:2; padding-left: 12px ;">
                     <h4 style="font-size: 18px">Collaboratively administrate empowered markets </h4>
                     <h4 style="font-size: 18px"> via plug-and-play networks. Dynamically pro- </h4>
                     <h4 style="font-size: 18px"> crastinate B2C users after installed base bene- </h4>
@@ -385,10 +338,92 @@
                 </div>
 
             </div>
-            <div class="nine wide column"> <img class="ui floated image" src="/img/graph1.jpg">
-                <canvas id="myChart1" style="height: 150px; width: 250px">
+            <div class="nine wide column">
+                <canvas id="myChart1" style="height: 450px; width: 950px;">  </canvas>
+                <script > const ctx1 = document.getElementById("myChart1").getContext("2d");
+                const gradientStroke = ctx1.createLinearGradient(500, 0, 100, 0);
+                gradientStroke.addColorStop(1, "#3f51b5");
+                gradientStroke.addColorStop(0.7, "#3f51b5");
+                gradientStroke.addColorStop(0.1, "#ff9f00");
+                gradientStroke.addColorStop(0, "#4baf4f");
+                gradientStroke.addColorStop(0.6, "#e54919");
+                gradientStroke.addColorStop(0.4, "#e54919");
+                gradientStroke.addColorStop(0.3, "#ff9f00");
+                const myChart1 = new Chart(ctx1, {
+                    type: "bar",
+                    data: {
+                        datasets: [
+                            {
+                                label: "Line",
+                                borderColor: gradientStroke,
+                                pointHoverBorderWidth: 1,
+                                pointRadius: 0,
+                                fill: false,
+                                borderWidth: 10,
+                                pointHoverRadius: 4,
+                                data: [60, 53, 55, 54, 56, 45, 61, 52, 59, 50, 58],
+                                type: "line",
+                                order: 1,
+                            },
+                            {
+                                label: "Bar",
+                                data: [70, 70, 70, 70, 70, 70, 70, 70],
+                                backgroundColor: "white",
+                                order: 2,
+                            },
+                        ],
+                        labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug"],
+                    },
+                    linearGradientLine: true,
+                    options: {
+                        tooltips: {
+                            mode: "nearest",
+                            intersect: false,
+                            yAlign: null,
+                            xAlign: "center",
+                            borderColor: "#3f51b5",
+                            pointBorderWidth: 10,
+                            pointHoverRadius: 10,
+                            pointHoverBorderWidth: 1,
+                            borderWidth: 9,
 
-                </canvas>
+                            callbacks: {
+                                label: function (t, d) {
+                                    var xLabel = d.datasets[t.datasetIndex].label;
+                                    var yLabel = t.yLabel / 80;
+                                    if (t.datasetIndex === 1) return false;
+                                    else if (t.datasetIndex === 0)
+                                        return xLabel + "%" + yLabel.toFixed(2);
+                                },
+                            },
+                        },
+                        responsive: false,
+                        maintainAspectRatio: false,
+                        scales: {
+                            xAxes: [
+                                {
+                                    barPercentage: 0.97,
+                                    categoryPercentage: 1,
+                                },
+                            ],
+                            yAxes: [
+                                {
+                                    stacked: true,
+                                    ticks: {
+                                        display: false,
+                                    },
+                                    gridLines: {
+                                        display: false,
+                                    },
+                                },
+                            ],
+                        },
+                    },
+                });
+
+                </script>
+
+
             </div>
         </div>
     </div>
@@ -399,7 +434,7 @@
             <div class="ui raised segment">
                 <div style="font-family: 'Raleway', sans-serif; color: black; font-size: 19px"> ACTIVE LEADS </div>
                 <div class="ui divider"></div>
-                <table width="1200px" height="255px" style="font-family: 'Raleway', sans-serif; color: hsl(180, 2%, 78%)">
+                <table width="1200px" height="260px" style="font-family: 'Raleway', sans-serif; color: hsl(180, 2%, 78%)">
                     <tr>
                         <td><b style="color: black; font-size: 17px">Type</b></td>
                         <td><b style="color: black; font-size: 17px">Lead Name</b></td>
@@ -498,34 +533,147 @@
         <div class="five wide column">
             <div class="without-margin-bottom ui raised segment">
                 <div class="ui list">
-                    <div class="text2" style=" height:25px;">TODO LIST
+                    <div class="text2" style=" height:25px; font-size: 15px; font-family: 'Raleway', sans-serif; color: black; ">TODO LIST
                         <button class="ui right floated green button toggle-all-tasks">Togglle All</button>
+                        <script>
+                            function updateCounterDisplay() {
+                                var count = $(".todo-container").length;
+                                $(".counter-display").text(count);
+                            }
+
+                            $(document).ready(function () {
+                                addListenerToAddTask();
+                                addListenerToDeleteAllTasks();
+                                addListenerToToggleAllTasks();
+                                as();
+                            });
+                            function addListenerToAddTask() {
+                                $(".ui.blue.button").click(function () {
+                                    var valueTask = $(".input-task").val();
+                                    if (!valueTask.trim()) {
+                                        alert("Please, enter your text!");
+                                        return false;
+                                    }
+                                    var containerTodo =
+                                        "<div class='todo-container' style='height:36px'>  <input type='checkbox'><label>" +
+                                        valueTask +
+                                        "</label><button class='delete-task'>Delete</button></div>";
+                                    $(".todos-container").append(containerTodo);
+                                    $(".input-task").val("");
+                                    addListenerToDeleteTask();
+                                    updateCounterDisplay();
+                                });
+                            }
+
+                            function addListenerToDeleteTask() {
+                                $(".delete-task").click(function () {
+                                    $(this).parents(".todo-container").remove();
+                                    updateCounterDisplay();
+                                });
+                            }
+
+                            function addListenerToDeleteAllTasks() {
+                                $(".delete-all-tasks").click(function () {
+                                    $(".todos-container").empty();
+                                    updateCounterDisplay();
+                                });
+                            }
+
+                            function addListenerToToggleAllTasks() {
+                                $(".toggle-all-tasks").click(function () {
+                                    $(".todo-container > input[type=checkbox]").prop("checked", true);
+                                });
+                            }
+
+                            function as() {
+                                $(".all-tasks").click(function () {
+                                    $(".todo-container > input[type=checkbox]").prop("checked", false);
+                                });
+                            }
+
+                            ////////////////////////////////////////
+
+                            let tasks =  [
+                                {
+                                    "id": 1,
+                                    "description": "Collaboratively administrate",
+                                    "completed": false
+                                },
+                                {
+                                    "id": 2,
+                                    "description": "Another todo on the list. Add as many you want",
+                                    "completed": true
+                                },
+                                {
+                                    "id": 3,
+                                    "description": "Dramatically maintain clicks-and-mortar",
+                                    "completed": false
+                                },
+                                {
+                                    "id": 4,
+                                    "description": "administrate empowered markets.",
+                                    "completed": false
+                                }
+                            ]
+
+
+                            $("#ui.green.button.all").click(function () {
+                                $.ajax({
+                                    url: "/js/data.json",
+                                    method: "get",
+
+                                    success: function (response) {
+                                        console.log(response);
+                                        //
+                                        for (let index = 0; index < response["tasks"].length; index++) {
+                                            var checked = response["tasks"][index]["completed"];
+                                            console.log(checked);
+                                            var containerTodo =
+                                                `<div class='todo-container' style='height:36px'>  <input type='checkbox' ${checked ? "checked=true" : ""}><label>` + response["tasks"][index]["description"] + "</label><button class='delete-task'>Delete</button></div>";
+                                            $(".todos-container").append(containerTodo);
+                                            $(".input-task").val("");
+                                            addListenerToDeleteTask();
+                                            updateCounterDisplay();
+                                        }
+
+                                        $("#ui.green.button.all").click(function () {
+                                            $("#todos-container").empty();
+                                            updateCounterDisplay();
+                                        });
+
+                                        //
+                                    },
+                                });
+                            });
+                        </script>
                     </div>
+
                     <div class="ui divider"></div>
                     <div class="todos-container"></div>
-                    <div class="item" style=" height:36px">
-                      <input type="checkbox" name="example">
-                      <label>Collaboratively administrate</label>
-                    </div>
-                     <div class="item" style=" height:36px">
-                      <input type="checkbox" checked="checked">
-                      <label>Another todo on the list. Add as many you want</label>
+
+                   <div class="item" style=" height:36px">
+                        <input type="checkbox" name="example">
+                        <label>Collaboratively administrate</label>
                     </div>
                     <div class="item" style=" height:36px">
-                      <input type="checkbox" name="example">
-                      <label>Dramatically maintain clicks-and-mortar</label>
+                        <input type="checkbox" checked="checked">
+                        <label>Another todo on the list. Add as many you want</label>
                     </div>
                     <div class="item" style=" height:36px">
-                      <input type="checkbox" name="example">
-                      <label>administrate empowered markets.</label>
+                        <input type="checkbox" name="example">
+                        <label>Dramatically maintain clicks-and-mortar</label>
                     </div>
+                    <div class="item" style=" height:36px">
+                        <input type="checkbox" name="example">
+                        <label>administrate empowered markets.</label>
+                    </div>
+
 
                     <div class="ui divider"></div>
 
                     <div style=" color: rgb(184, 184, 184); font-family: 'Raleway', sans-serif; font-size: 14px; ">
                         <div class="ui fluid transparent input">
                             <input type="text" class="form-control input-task" placeholder=" Write some  todo task here">
-                            <!-- <button type="submit" style="background-color:limegreen; border-color: limegreen; font-size: 15px" class="add-task">+</button> -->
                             <button class="ui blue button" style="margin: 0mm; padding: 10px 8px 10px 15px; font-size: 10px;">
                                 <i class=" plus icon"></i>
                             </button>
@@ -537,6 +685,7 @@
                 <div class="change" id="cnt">
                     <button class="ui green button all ">
                         <div style="font-family: 'Raleway', sans-serif; font-size: 15px;"> All </div>
+
                     </button>
                     <button class="ui white button all-tasks">
                         <div style="font-family: 'Raleway', sans-serif; font-size: 15px;"> Active </div>
@@ -575,89 +724,160 @@
                 </div>
                 <div class="line3" style="padding: 5px 0px 0px 20px;">Your domain will expied in 13 days</div>
             </div>
-                <!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+            <!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
             <div class="ui  segment">
-                <div style="font-family: 'Raleway', sans-serif; color: black; font-size: 19px"> ACTIVITIES </div>
+                <div style="font-family: 'Raleway', sans-serif; color: black; font-size: 19px;"> ACTIVITIES </div>
                 <div class="ui divider"></div>
-                <img class="ui floated image" src="/img/graph3.jpg">
+                <div class="ui grid">
+                    <div class="six wide column">
+                        <canvas id="myChart2" style="height: 140px;  "></canvas>
+                    </div>
+            <script >
+             const ctx2 = document.getElementById("myChart2").getContext("2d");
+                const myChart2 = new Chart(ctx2, {
+               type: "pie",
+                   data: {
+                      labels: ["Chrome", "Safari", "Firefox"],
+                      datasets: [
+                {
+                    data: [64, 24, 12],
+                    backgroundColor: ["#3f51b5", "#00ffff", " #4baf4f"],
+                    borderWidth: 0,
+                },
+            ],
+        },
+        options: {
+            rotation: 1,
+            responsive: false,
+            title: {
+                display: true,
+                padding: 5,
+            },
+            legend: {
+                display: true,
+                position: "right",
+                labels: {
+                    boxWidth: 20,
+                    fontColor: "#111",
+                    padding: 20,
+                },
+            },
+        },
+    });
+        </script>
+                    <div class="ten wide column" style="padding-top: 60px; font-size: 17px ">
+                        Lorem ipsum dolor sit amet, consectetur adipisising elit. sed
+                        do eiusmod tempor incidentidunt ut labore et dolore magna
+                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco laboris are not ut.
 
-
-               <table>
-                  <tr>
-                    <td width="150" height="120" valign="top">
-                      <table height="130">
-
-                        <div style=" color: rgb(184, 184, 184); font-family: 'Raleway', sans-serif; font-size: 16px; ">
-                          <tr>
-                            <td>
-                              <div class="ui label" style="background-color: #3f51b5; font-size: 10px"></div> Chrome
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <div class="ui blue label" style="font-size: 10px"></div> Safari
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <div class="ui label" style="background-color: #4baf4f; font-size: 10px"></div> Firefox
-                            </td>
-                          </tr>
-                      </table>
-                    </td>
-                    <td> Lorem ipsum dolor sit amet, consectetur adipisising elit. sed
-                      do eiusmod tempor incidentidunt ut labore et dolore magna
-                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                      ullamco laboris are not ut </td>
-                  </tr>
-                </table>
-
-            </div>
-        </div>
-        <!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
-        <div class="eight wide column">
-            <div class="ui raised segment">
-                <div style="font-family: 'Raleway', sans-serif; color: black; font-size: 19px"> ANALYTICS </div>
-               <div class="ui divider"></div>
-                <img src="/img/graph2.jpg" width="900" height="300">
-                <canvas id="myChart3" style="height: 118px;"></canvas>
-            </div>
-               <!-- <div class="ui divider"></div>
-                <canvas id="myChart3" style="height: 422px"></canvas>
-                 </div> -->
+                    </div>
                 </div>
-
             </div>
-        <!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
-    </div>
-
-
-    <div class="ui divider" style="margin: 0em auto 2em auto"></div>
-    <div class="ui grid">
-        <div class="ui  dropdown item" style="font-size: 15px;">
-            <table>
-                <tfoot>
-                <tr>
-
-                    <th>Copyright </th>
-                    <th> M7amadsa3ed 2015.</th>
-                    <th> All rights reserved </th>
-                    <th></th>
-                    <th></th>
-                    <th></th>
-                    <th>Careers</th>
-                    <th></th>
-                    <th></th>
-                    <th></th>
-                    <th>Privacy Policy</th>
-                    <th style="padding-left: 886px ;">Feedback <i class="angle up icon"></i></th>
-                </tr>
-                </tfoot>
-            </table>
         </div>
+        <!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+        <div class="eight wide column" >
+            <div class="ui raised segment">
+                <div style="font-family: 'Raleway', sans-serif; color: black; font-size: 19px; padding-left: 32px;"> ANALYTICS </div>
+                <div class="ui divider"></div>
+
+
+             <canvas id="myChart3" style="height: 382px; padding-left: 40px ;"></canvas>
+        <script>
+            const ctx3 = document.getElementById("myChart3").getContext("2d");
+        const myChart3 = new Chart(ctx3, {
+            type: "bar",
+            data: {
+                labels: [
+                    "Jan",
+                    "Feb",
+                    "Mar",
+                    "Apr",
+                    "May",
+                    "Jun",
+                    "Jul",
+                    "Aug",
+                    "Sep",
+                    "Oct",
+                    "Nov",
+                    "Dec",
+                ],
+                datasets: [
+                    {
+                        borderWidth: -2,
+                        label: "Customers",
+                        backgroundColor: "#3f40b5",
+                        hoverBackgroundColor: "#4640c9",
+                        data: [470, 230, 235, 235, 500, 390, 480, 480, 480, 400, 480, 480],
+                    },
+                    {
+                        borderWidth: -2,
+                        label: "Users",
+                        backgroundColor: "#3f53b5",
+                        hoverBackgroundColor: "#4680c9",
+                        data: [270, 50, 60, 70, 160, 130, 300, 180, 205, 150, 150, 170],
+                    },
+                ],
+            },
+            options: {
+                responsive: false,
+                maintainAspectRatio: false,
+                scales: {
+                    xAxes: [
+                        {
+                            stacked: true,
+                            gridLines: {
+                                display: false,
+                            },
+                        },
+                    ],
+                    yAxes: [
+                        {
+                            stacked: true,
+                            gridLines: {
+                                display: false,
+                            },
+                        },
+                    ],
+                },
+            },
+        });</script>
+            </div>
     </div>
 
-    <!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+</div>
+<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+</div>
+
+
+<div class="ui divider" style="margin: 0em auto 2em auto"></div>
+<div class="ui grid">
+    <div class="ui  dropdown item" style="font-size: 15px;">
+        <table>
+            <tfoot>
+            <tr>
+
+                <th style="padding-left: 40px ;">Copyright </th>
+                <th style="padding-left: 8px ;"> M7amadsa3ed 2015.</th>
+                <th style="padding-left: 8px ;"> All rights reserved </th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th>Careers</th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th>Privacy Policy</th>
+                <th style="padding-left: 1200px ;">Feedback <i class="angle up icon"></i></th>
+            </tr>
+            </tfoot>
+        </table>
+    </div>
+</div>
+
+
+<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+<a class="item" style="height: 10000px; color: white;">a</a>
 
 
 </div>
@@ -666,8 +886,10 @@
     $("#sidebar").first().sidebar("attach events", "#myicon");
 </script>
 
-<!-- build:js scripts/main.js -->
-<script src="js/script.js"></script>
+<!-- build:js scripts/script.js -->
+
+
+<script src="js/script.min.js"></script>
 
 
 </body>
