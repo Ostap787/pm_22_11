@@ -1,0 +1,184 @@
+
+a{
+    background-color: white;
+}
+.navbar-header{
+    float: left;
+}
+
+.navbar-brand .brand-icon {
+    float: left;
+    margin-right: 0.5rem;
+}
+
+.navbar-brand .brand-icon {
+    color: #188ae2;
+    display: inline-block;
+    text-align: center;
+    transition: margin-right .5s ease;
+    font-size: 2.5rem;
+}
+
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+body {
+    margin: 0% !important;
+    padding: 0% !important;
+    touch-action: none;
+    overflow-x: scroll !important; }
+
+@media only screen and (min-width: 601px) and (max-width: 1244px) {
+    .item {
+        flex-direction: row !important; }
+    .Block {
+        float: left !important;
+        margin: 2em auto 2em auto ; }}
+
+@media only screen and (min-width: 1245px) {
+    body {
+        height: 800px !important; }
+    .Block {
+        float: right !important; }}
+
+@media only screen and (max-width: 600px) {
+    .item {
+        flex-direction: row !important; }
+    .Block {
+        float: right !important; }
+    body {
+        height: 1450px !important;
+        width: 600px !important; } }
+
+.link.icon {
+    float: left;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    height: 45px;
+}
+
+.fixed.borderless.menu {
+    background-color: hsl(231.4, 54.4%, 40.4%);
+}
+
+.text {
+    font-size: 15px;
+    padding: 15px 12px;
+    color: rgb(196, 190, 190);
+}
+
+#jumbotron {
+    padding: 5em;
+    margin: 8em auto 3em auto;
+    font-weight: 700;
+}
+
+.text1 {
+    font-family: "Raleway", sans-serif;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+}
+
+.count1 {
+    font-family: "Raleway", sans-serif;
+    font-size: 25px;
+    color: #3f51b5;
+}
+
+.without-margin-bottom {
+    margin-bottom: 0px !important;
+}
+
+.without-margin-top {
+    margin-top: 0px !important;
+}
+
+.change {
+    font-family: "Raleway", sans-serif;
+    font-size: 15px;
+    padding: 10px 12px;
+    color: rgb(230, 227, 227);
+}
+
+.unlock.icon,
+.clipboard.outline.icon,
+.ban.icon,
+.paperclip.icon
+{
+    font-size: 45px;
+    padding: 12px 12px;
+    color: rgb(230, 227, 227);
+    margin: 0.6em auto 0.5em auto;
+}
+
+.twelve.wide.column {
+    margin: 2em auto 1em auto;
+}
+
+.ui.right.floated.green.button{
+    margin:-7px 0px 0px 0px;
+}
+
+.text2{
+    font-family: "Raleway", sans-serif;
+    color: black;
+}
+
+.line1 {
+    border-left: 2px solid hsl(231.4, 54.4%, 40.4%);
+    padding: 10px 10px 10px 10px;
+    margin: -7px 0px -1.5px 6px;
+}
+
+.line2 {
+    border-left: 2px solid #e54919;
+    padding: 10px 10px 10px 10px;
+    margin: -7px 0px -1.5px 6px;
+}
+
+.line3 {
+    border-left: 2px solid #4baf4f;
+    padding: 10px 10px 10px 10px;
+    margin: -7px 0px -1.5px 6px;
+}
+
+input[type=checkbox]:checked + label  {
+    text-decoration: line-through;
+    color: rgb(255, 252, 252);
+}
+
+
+
+
+
+
+
+
+
+.todo-wrap{
+    width: 100%;
+    padding: 10px;
+}
+.todos-container button{
+    border: none;
+    display: inline-block;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    float: right;
+}
+.todo-container{
+    overflow: hidden;
+    vertical-align: middle;
+}
+.pushable > .pusher:after {
+    position: fixed;
+    top: 0;
+    right: 0;
+    content: '';
+    background: #edf0f5;
+    overflow: hidden;
+    opacity: 1;
+    -webkit-transition: opacity 500ms;
+    transition: opacity 500ms;
+    will-change: opacity;
+    z-index: 1000;
+}

@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
           integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <!-- endbuild -->
-    <!-- build:css styles/main.css -->
+    <!-- build:sass styles/style.sass -->
     <link rel="stylesheet" href="css/style.css" />
     <!-- endbuild -->
     <!-- build:js scripts/script.js -->
@@ -28,10 +28,11 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.7/dist/semantic.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.7/dist/semantic.min.js"></script>
 
-    <!-- <link rel="stylesheet" href="styles/d.css" /> -->
+    <!-- <link rel="stylesheet" href="styles/d.sass" /> -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
+
 
 
 
@@ -42,21 +43,21 @@
 <div class="ui sidebar left inverted vertical menu" id="sidebar">
 
     <!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
-    <div style="height: 56px;   padding: 0px 0px 0px 0px; background-color: hsl(231.4, 54.4%, 40.4%)">
+    <div style="height: 56px;padding: 0px 0px 0px 0px; background-color: hsl(231.4, 54.4%, 40.4%)">
         <div class="item">
             <div class="stitle">
-                <div class="text " style="padding: 0px -10px -35px -10px; height: 50px; font-size: 25px; text-align: center;"> <i class="fab fa-gg"></i> Infinity </div>
+                <div class="text " style=" font-family: 'Raleway', sans-serif; color: white;padding: 0px -10px -35px -10px; height: 50px; font-size: 25px; padding-left: 3px; "> <i class="fab fa-gg"></i> Infinity </div>
             </div>
         </div>
     </div>
     <!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
     <div class="item" style="background-color: rgb(245, 245, 245)">
-        <img class="ui tiny circular floated image" src="/img/mohamed.jpg" >
+        <img class="ui tiny circular floated image" style="width: 70px; padding-top: 15px;" src="/img/mohamed.jpg" >
 
         <table>
             <tr>
                 <td width="10" height="90" valign="top">
-                <td style="color: #000; font-size: 13px "> MOHAMED SAID
+                <td style="color: #000; font-size: 13px; font-family: 'Raleway', sans-serif; color: black;"> MOHAMED SAID
                     <div class="ui dropdown">
                         <div style="font-size: 13px;">Founder of App <i class="dropdown icon"></i></div>
                     </div>
@@ -66,11 +67,11 @@
     </div>
     <div class="menubar-scroll-inner" style="overflow: hidden; width: auto; height: 913px;">
         <!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
-        <div class="ui divider" style="margin: -0.8px 0px -0.6px 0px; "> </div>
+        <div class="ui divider" style="margin: -0.8px 0px -0.6px 0px; font-family: 'Raleway', sans-serif; color: black;"> </div>
         <div style="background-color: hsla(0, 0%, 96%, 0.993); color: #000; ">
             <a class=" item" style=" color: #000; font-size: 13px ">Ui Kits</a>
             <a class=" item" style=" color: #000;">
-                <div><i class="home icon"></i>Dashboard</div>
+                <div><i class="home icon" style="height: 10px;"></i>Dashboard</div>
             </a>
             <a  class="item" style=" color: #000;">
                 <div><i class="bolt icon"></i>Apps</div>
@@ -103,13 +104,13 @@
             </a>
         </div>
 
-        <div class="ui divider" style="margin: -0.6px 0px -0.6px 0px; "> </div>
+        <div class="ui divider" style="margin: -0.6px 0px -0.6px 0px;"> </div>
 
         <!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
         <div style="background-color: hsla(0, 0%, 96%, 0.993); color: #000; ">
             <a class=" item" style=" color: #000; font-size: 13px ">Ui Kits</a>
             <a class=" item" style=" color: #000;">
-                <div><i class="cog icon"></i>Settings</div>
+                <div><i class="cog icon" style="height: 14px;"></i>Settings</div>
             </a>
             <a class="item" style=" color: #000;">
                 <div><i class="paste icon"></i>Document</div>
@@ -129,7 +130,7 @@
 </div>
 
 <!--   права частина меню -->
-<div class="ui fixed borderless menu" style="background-color: #464da8">
+<div class="ui fixed borderless menu" style="background-color: #464da8; height: 56px;">
     <div class="ui icon item" id="myicon">
         <i class="large bars link icon"></i>
     </div>
@@ -166,8 +167,6 @@
             <div class="menu">
                 <div class="ui icon search input">
                     <i class="search icon"></i>
-                    <input type="text" placeholder="Search friend...">
-                </div>
 
 
             </div>
@@ -177,7 +176,12 @@
         <!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
         <div class="ui dropdown item">
             <i class="th link icon" style="color: #dad8d8 "></i>
+            <div class="menu">
 
+
+                </div>
+            </div>
+        </div>
 
         </div>
 
@@ -232,7 +236,7 @@
 
                         <ion-icon name="cellular-outline" style="padding-left: 285px; font-size: 20px;"></ion-icon> </div>
 
-                        <span class="small-chart pull-right" data-plugin="sparkline" data-options="[1,2,3,5,4], { type: 'bar', barColor: '#ffffff', barWidth: 5, barSpacing: 2 }">
+                        <span class="small-chart pull-right" data-plugin="sparkline" >
                     <canvas width="33" height="16" style="display: inline-block; width: 411px; height: 0px; vertical-align: top;"> </canvas></span>
 
 
@@ -259,7 +263,7 @@
                     <footer class="widget-footer bg-danger"style="background-color: #e54919; color: #ffffffbb;" ><div class="change" style="padding: 15px 0px 0px 0px;"> %charge
                         <ion-icon name="stats-chart-outline" style="padding-left: 285px; font-size: 20px;"></ion-icon>
 
-                        <span class="small-chart pull-right" data-plugin="sparkline" data-options="[1,2,3,5,4], { type: 'bar', barColor: '#ffffff', barWidth: 5, barSpacing: 2 }">
+                        <span class="small-chart pull-right" data-plugin="sparkline" >
                             <canvas width="33" height="16" style="display: inline-block; width: 404px; height: 1px; vertical-align: top;"> </canvas></span></div>
                     </footer>
 
@@ -283,7 +287,7 @@
                     </div>
                     <footer class="widget-footer bg-danger"style="background-color: #4baf4f; color: #ffffffbb;" ><div class="change" style="padding: 15px 0px 0px 0px;"> %charge
                         <ion-icon name="cellular-outline" style="padding-left: 285px; font-size: 20px;"></ion-icon></div>
-                        <span class="small-chart pull-right" data-plugin="sparkline" data-options="[1,2,3,5,4], { type: 'bar', barColor: '#ffffff', barWidth: 5, barSpacing: 2 }">
+                        <span class="small-chart pull-right" data-plugin="sparkline" >
                     <canvas width="33" height="16" style="display: inline-block; width: 411px; height: 1px; vertical-align: top;"></canvas></span></footer>
                 </div>
             </div>
@@ -305,7 +309,7 @@
                     <footer class="widget-footer bg-danger"style="background-color: #ff9f00; color: #ffffffbb;" ><div class="change" style="padding: 15px 0px 0px 0px;"> %charge
                         <ion-icon name="stats-chart-outline" style="padding-left: 285px; font-size: 20px;"></ion-icon>
 
-                        <span class="small-chart pull-right" data-plugin="sparkline" data-options="[1,2,3,5,4], { type: 'bar', barColor: '#ffffff', barWidth: 5, barSpacing: 2 }">
+                        <span class="small-chart pull-right" data-plugin="sparkline" >
                     <canvas width="33" height="16" style="display: inline-block; width: 404px; height: 0px; vertical-align: top;">
 
                     </canvas></span> </div></footer>
@@ -322,9 +326,9 @@
         <div class="ui grid" style=" padding: 0px 0px 0px 0px">
             <div class="seven wide column">
 
-                <div style="color: #3f51b5;font-family: 'Raleway', sans-serif; font-size: 30px; padding: 25px 0px;  ">Sales in
+                <div style="color: #3f51b5;font-family: 'Raleway', sans-serif; font-size: 30px; padding: 25px 0px; padding-left: 12px;">Sales in
                     2014 </div>
-                <div style=" color: rgb(184, 184, 184); font-family: 'Raleway', sans-serif;letter-spacing:2">
+                <div style=" color: rgb(184, 184, 184); font-family: 'Raleway', sans-serif;letter-spacing:2; padding-left: 12px ;">
                     <h4 style="font-size: 18px">Collaboratively administrate empowered markets </h4>
                     <h4 style="font-size: 18px"> via plug-and-play networks. Dynamically pro- </h4>
                     <h4 style="font-size: 18px"> crastinate B2C users after installed base bene- </h4>
@@ -335,8 +339,8 @@
 
             </div>
             <div class="nine wide column">
-                <canvas id="myChart1" style="height: 450px; width: 950px">  </canvas>
-                <script> const ctx1 = document.getElementById("myChart1").getContext("2d");
+                <canvas id="myChart1" style="height: 450px; width: 950px;">  </canvas>
+                <script > const ctx1 = document.getElementById("myChart1").getContext("2d");
                 const gradientStroke = ctx1.createLinearGradient(500, 0, 100, 0);
                 gradientStroke.addColorStop(1, "#3f51b5");
                 gradientStroke.addColorStop(0.7, "#3f51b5");
@@ -529,12 +533,125 @@
         <div class="five wide column">
             <div class="without-margin-bottom ui raised segment">
                 <div class="ui list">
-                    <div class="text2" style=" height:25px;">TODO LIST
+                    <div class="text2" style=" height:25px; font-size: 15px; font-family: 'Raleway', sans-serif; color: black; ">TODO LIST
                         <button class="ui right floated green button toggle-all-tasks">Togglle All</button>
+                        <script>
+                            function updateCounterDisplay() {
+                                var count = $(".todo-container").length;
+                                $(".counter-display").text(count);
+                            }
+
+                            $(document).ready(function () {
+                                addListenerToAddTask();
+                                addListenerToDeleteAllTasks();
+                                addListenerToToggleAllTasks();
+                                as();
+                            });
+                            function addListenerToAddTask() {
+                                $(".ui.blue.button").click(function () {
+                                    var valueTask = $(".input-task").val();
+                                    if (!valueTask.trim()) {
+                                        alert("Please, enter your text!");
+                                        return false;
+                                    }
+                                    var containerTodo =
+                                        "<div class='todo-container' style='height:36px'>  <input type='checkbox'><label>" +
+                                        valueTask +
+                                        "</label><button class='delete-task'>Delete</button></div>";
+                                    $(".todos-container").append(containerTodo);
+                                    $(".input-task").val("");
+                                    addListenerToDeleteTask();
+                                    updateCounterDisplay();
+                                });
+                            }
+
+                            function addListenerToDeleteTask() {
+                                $(".delete-task").click(function () {
+                                    $(this).parents(".todo-container").remove();
+                                    updateCounterDisplay();
+                                });
+                            }
+
+                            function addListenerToDeleteAllTasks() {
+                                $(".delete-all-tasks").click(function () {
+                                    $(".todos-container").empty();
+                                    updateCounterDisplay();
+                                });
+                            }
+
+                            function addListenerToToggleAllTasks() {
+                                $(".toggle-all-tasks").click(function () {
+                                    $(".todo-container > input[type=checkbox]").prop("checked", true);
+                                });
+                            }
+
+                            function as() {
+                                $(".all-tasks").click(function () {
+                                    $(".todo-container > input[type=checkbox]").prop("checked", false);
+                                });
+                            }
+
+                            ////////////////////////////////////////
+
+                            let tasks =  [
+                                {
+                                    "id": 1,
+                                    "description": "Collaboratively administrate",
+                                    "completed": false
+                                },
+                                {
+                                    "id": 2,
+                                    "description": "Another todo on the list. Add as many you want",
+                                    "completed": true
+                                },
+                                {
+                                    "id": 3,
+                                    "description": "Dramatically maintain clicks-and-mortar",
+                                    "completed": false
+                                },
+                                {
+                                    "id": 4,
+                                    "description": "administrate empowered markets.",
+                                    "completed": false
+                                }
+                            ]
+
+
+                            $("#ui.green.button.all").click(function () {
+                                $.ajax({
+                                    url: "/js/data.json",
+                                    method: "get",
+
+                                    success: function (response) {
+                                        console.log(response);
+                                        //
+                                        for (let index = 0; index < response["tasks"].length; index++) {
+                                            var checked = response["tasks"][index]["completed"];
+                                            console.log(checked);
+                                            var containerTodo =
+                                                `<div class='todo-container' style='height:36px'>  <input type='checkbox' ${checked ? "checked=true" : ""}><label>` + response["tasks"][index]["description"] + "</label><button class='delete-task'>Delete</button></div>";
+                                            $(".todos-container").append(containerTodo);
+                                            $(".input-task").val("");
+                                            addListenerToDeleteTask();
+                                            updateCounterDisplay();
+                                        }
+
+                                        $("#ui.green.button.all").click(function () {
+                                            $("#todos-container").empty();
+                                            updateCounterDisplay();
+                                        });
+
+                                        //
+                                    },
+                                });
+                            });
+                        </script>
                     </div>
+
                     <div class="ui divider"></div>
                     <div class="todos-container"></div>
-                    <div class="item" style=" height:36px">
+
+                   <div class="item" style=" height:36px">
                         <input type="checkbox" name="example">
                         <label>Collaboratively administrate</label>
                     </div>
@@ -550,6 +667,7 @@
                         <input type="checkbox" name="example">
                         <label>administrate empowered markets.</label>
                     </div>
+
 
                     <div class="ui divider"></div>
 
@@ -567,6 +685,7 @@
                 <div class="change" id="cnt">
                     <button class="ui green button all ">
                         <div style="font-family: 'Raleway', sans-serif; font-size: 15px;"> All </div>
+
                     </button>
                     <button class="ui white button all-tasks">
                         <div style="font-family: 'Raleway', sans-serif; font-size: 15px;"> Active </div>
@@ -607,11 +726,11 @@
             </div>
             <!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
             <div class="ui  segment">
-                <div style="font-family: 'Raleway', sans-serif; color: black; font-size: 19px"> ACTIVITIES </div>
+                <div style="font-family: 'Raleway', sans-serif; color: black; font-size: 19px;"> ACTIVITIES </div>
                 <div class="ui divider"></div>
                 <div class="ui grid">
                     <div class="six wide column">
-                        <canvas id="myChart2" style="height: 140px"></canvas>
+                        <canvas id="myChart2" style="height: 140px;  "></canvas>
                     </div>
             <script >
              const ctx2 = document.getElementById("myChart2").getContext("2d");
@@ -659,11 +778,11 @@
         <!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
         <div class="eight wide column" >
             <div class="ui raised segment">
-                <div style="font-family: 'Raleway', sans-serif; color: black; font-size: 19px"> ANALYTICS </div>
+                <div style="font-family: 'Raleway', sans-serif; color: black; font-size: 19px; padding-left: 32px;"> ANALYTICS </div>
                 <div class="ui divider"></div>
-                <!-- <img src="/img/graph2.jpg" width="650" height="364" style="padding-left: 150px;" >-->
 
-             <canvas id="myChart3" style="height: 375px;"></canvas>
+
+             <canvas id="myChart3" style="height: 382px; padding-left: 40px ;"></canvas>
         <script>
             const ctx3 = document.getElementById("myChart3").getContext("2d");
         const myChart3 = new Chart(ctx3, {
@@ -738,7 +857,7 @@
             <tfoot>
             <tr>
 
-                <th style="padding-left: 35px ;">Copyright </th>
+                <th style="padding-left: 40px ;">Copyright </th>
                 <th style="padding-left: 8px ;"> M7amadsa3ed 2015.</th>
                 <th style="padding-left: 8px ;"> All rights reserved </th>
                 <th></th>
@@ -756,6 +875,7 @@
     </div>
 </div>
 
+
 <!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
 <a class="item" style="height: 10000px; color: white;">a</a>
 
@@ -767,7 +887,9 @@
 </script>
 
 <!-- build:js scripts/script.js -->
-<script src="js/script.js"></script>
+
+
+<script src="js/script.min.js"></script>
 
 
 </body>

@@ -1,18 +1,44 @@
-//const { task } = require("gulp");
 
-//const { task } = require("gulp");
+
 
 
 $("#sidebar").first().sidebar("attach events", ".ui.icon.item .bars");
 
+$("#ui.green.button.all").click(function () {
+    $.ajax({
+        url: "/js/data.json",
+        method: "get",
 
-// $(".checkbox").on('click', 'input[type="checkbox"]', function () {
-//   $(this).next('label').toggleClass('highlight', this.checked);
-// });
+        success: function (response) {
+            console.log(response);
+            //
+            for (let index = 0; index < response["tasks"].length; index++) {
+                var checked = response["tasks"][index]["completed"];
+                console.log(checked);
+                var containerTodo =
+                    `<div class='todo-container' style='height:36px'>  <input type='checkbox' ${checked ? "checked=true" : ""}><label>` + response["tasks"][index]["description"] + "</label><button class='delete-task'>Delete</button></div>";
+                $(".todos-container").append(containerTodo);
+                $(".input-task").val("");
+                addListenerToDeleteTask();
+                updateCounterDisplay();
+            }
+
+            $("#ui.green.button.all").click(function () {
+                $("#todos-container").empty();
+                updateCounterDisplay();
+            });
+
+            //
+        },
+    });
+});
+
+
 
 ////////////////////////////////////////////////////////////
-const ctx1 = document.getElementById("myChart1").getContext("2d");
-const gradientStroke = ctx1.createLinearGradient(500, 0, 100, 0);
+
+var ctx1 = document.getElementById("myChart1").getContext("2d");
+var gradientStroke = ctx1.createLinearGradient(500, 0, 100, 0);
 gradientStroke.addColorStop(1, "#3f51b5");
 gradientStroke.addColorStop(0.7, "#3f51b5");
 gradientStroke.addColorStop(0.1, "#ff9f00");
@@ -20,7 +46,7 @@ gradientStroke.addColorStop(0, "#4baf4f");
 gradientStroke.addColorStop(0.6, "#e54919");
 gradientStroke.addColorStop(0.4, "#e54919");
 gradientStroke.addColorStop(0.3, "#ff9f00");
-const myChart1 = new Chart(ctx1, {
+var myChart1 = new Chart(ctx1, {
     type: "bar",
     data: {
         datasets: [
@@ -63,8 +89,7 @@ const myChart1 = new Chart(ctx1, {
                     var xLabel = d.datasets[t.datasetIndex].label;
                     var yLabel = t.yLabel / 80;
                     if (t.datasetIndex === 1) return false;
-                    else if (t.datasetIndex === 0)
-                        return xLabel + "%" + yLabel.toFixed(2);
+                    else if (t.datasetIndex === 0) return xLabel + "%" + yLabel.toFixed(2);
                 },
             },
         },
@@ -94,24 +119,11 @@ const myChart1 = new Chart(ctx1, {
 
 ////////////////////////////////////////////////////////////
 
-const ctx3 = document.getElementById("myChart3").getContext("2d");
-const myChart3 = new Chart(ctx3, {
+var ctx3 = document.getElementById("myChart3").getContext("2d");
+var myChart3 = new Chart(ctx3, {
     type: "bar",
     data: {
-        labels: [
-            "Jan",
-            "Feb",
-            "Mar",
-            "Apr",
-            "May",
-            "Jun",
-            "Jul",
-            "Aug",
-            "Sep",
-            "Oct",
-            "Nov",
-            "Dec",
-        ],
+        labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
         datasets: [
             {
                 borderWidth: -2,
@@ -154,8 +166,8 @@ const myChart3 = new Chart(ctx3, {
 });
 
 ///////////////////
-const ctx2 = document.getElementById("myChart2").getContext("2d");
-const myChart2 = new Chart(ctx2, {
+var ctx2 = document.getElementById("myChart2").getContext("2d");
+var myChart2 = new Chart(ctx2, {
     type: "pie",
     data: {
         labels: ["Chrome", "Safari", "Firefox"],
@@ -244,10 +256,7 @@ function addListenerToAddTask() {
             alert("Please, enter your text!");
             return false;
         }
-        var containerTodo =
-            "<div class='todo-container' style='height:36px'>  <input type='checkbox'><label>" +
-            valueTask +
-            "</label><button class='delete-task'>Delete</button></div>";
+        var containerTodo = "<div class='todo-container' style='height:36px'>  <input type='checkbox'><label>" + valueTask + "</label><button class='delete-task'>Delete</button></div>";
         $(".todos-container").append(containerTodo);
         $(".input-task").val("");
         addListenerToDeleteTask();
@@ -283,35 +292,4 @@ function as() {
 
 ////////////////////////////////////////
 
-$(".ui.green.button.all").click(function () {
-    $.ajax({
-        url: "/js/data.json",
-        method: "get",
 
-        success: function (response) {
-            console.log(response);
-            //
-            for (let index = 0; index < response["tasks"].length; index++) {
-                var checked = response["tasks"][index]["completed"];
-                console.log(checked);
-                var containerTodo =
-                    `<div class='todo-container' style='height:36px'>  <input type='checkbox' ${
-                        checked ? "checked=true" : ""
-                    }><label>` +
-                    response["tasks"][index]["description"] +
-                    "</label><button class='delete-task'>Delete</button></div>";
-                $(".todos-container").append(containerTodo);
-                $(".input-task").val("");
-                addListenerToDeleteTask();
-                updateCounterDisplay();
-            }
-
-            $(".ui.green.button.all").click(function () {
-                $(".todos-container").empty();
-                updateCounterDisplay();
-            });
-
-            //
-        },
-    });
-});
